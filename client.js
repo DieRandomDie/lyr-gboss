@@ -10,6 +10,7 @@
 // @grant        none
 // ==/UserScript==
 
+//url needs to be the deployed Web App url from google App Script
 let url = 'https://script.google.com/macros/s/AKfycbzGCYWD48XW1uYdWG5FcF5sEGy64AMkb1mgCDAqutseCp12Sk245YkyKJnTyMmY8NhCuQ/exec'
 let fetchform = new FormData()
 let hp = 0
@@ -18,8 +19,6 @@ let seconds = 0
 fetchform.append('Remaining',hp)
 fetchform.set('Minutes',minutes)
 fetchform.set('Seconds',seconds)
-
-//The Dragon has 9,294,186,003,896,530,370,560 health points remaining and will continue to be vulnerable for another 1 minutes and 19 seconds.
 
 function newgboss(x) {
     $.post("gboss.php", {
@@ -30,9 +29,6 @@ function newgboss(x) {
             hp = xyz[0].split('The Dragon has ')[1].split(' ')[0]
             minutes = xyz[0].split('another ')[1].split(' ')[0]
             seconds = xyz[0].split('minutes and ')[1].split(' ')[0]
-            console.log(minutes)
-            console.log(seconds)
-            console.log(hp)
             fetchform.set('Remaining',hp)
             fetchform.set('Minutes',minutes)
             fetchform.set('Seconds',seconds)
