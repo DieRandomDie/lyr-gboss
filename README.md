@@ -21,3 +21,7 @@ add client.js to a new tampermonkey
 copy the link for your deployment - should look like https://script.google.com/macros/s/[lotsoflettersandnumbers]/exec - and replace the default url (line 14) on your tampermonkey script.
 
 enable the script, refresh lyr, probably should be working idk
+
+
+
+---- depending on my mood you can /w nezumi in game and I might help you if you run into issues ----
