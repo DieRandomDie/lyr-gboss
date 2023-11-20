@@ -12,7 +12,7 @@ replace the default text in Code.gs with sheet.js (if existing code, just create
 
 at the top right, click Deploy > New Deployment
 
-Description doesn't matter, Execuse as "Me (your email)", Who has access "Anyone", click deploy. (might have some authorization stuff happen here. if not follow the link it generates to prompt auth stuff ((I think)) )
+Description doesn't matter, Execute as "Me (your email)", Who has access "Anyone", click deploy. (might have some authorization stuff happen here. if not follow the link it generates to prompt auth stuff ((I think)) )
 
 --UserScript Setup--
 
